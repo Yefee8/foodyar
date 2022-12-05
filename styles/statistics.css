@@ -1,0 +1,33 @@
+.stats {
+    margin-left: 291px;
+    margin-right: 292px;
+    width: calc(100% - 583px);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.stats>.stat {
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 73px;
+}
+
+.stats>.stat:last-of-type{
+    margin-right: 0;
+}
+
+.stats>.stat>.count {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.stats>.stat>.desc {
+    color: var(--secondary);
+    font-size: 20px;
+    line-height: 25px;
+}

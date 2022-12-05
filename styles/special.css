@@ -1,7 +1,7 @@
 .special {
     margin-left: 101px;
     margin-right: 101px;
-    margin-top: 285px;
+    margin-top: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,6 +33,7 @@
     line-height: 25px;
     padding: 0px;
     margin: 0px;
+    cursor: pointer;
 }
 
 .special>.tabs>.tab:first-of-type {
