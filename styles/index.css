@@ -2,6 +2,7 @@
 @import url('./navbar.css');
 @import url('./banner.css');
 @import url('./special.css');
+@import url('./testimonial.css');
 
 :root {
     --primary: #F7C531;
