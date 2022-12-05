@@ -8,18 +8,22 @@
     <title>Foodyar - Eat what you cook with us, together!</title>
     <link rel="shortcut icon" href="./assets/🍔.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-    <header class="navbar">
-        <h1 class="title">
+    <header class="navbar container">
+        <h1 class="title col">
             <img src="./assets/🍔.png" height="28px"> Foodyar
         </h1>
 
         <div class="navs">
             <span class="nav">
-                <span>Home</span>
-                <div class="nav-border"></div>
+                <div>
+                    <span>Home</span>
+                    <div class="nav-border"></div>
+                </div>
             </span>
             <span class="nav">
                 Beverages
@@ -37,45 +41,47 @@
                 Stories
             </span>
 
-            <button class="nav-btn btn-base">
+            <button class="btn shadow-none nav-btn">
                 My Kitchen
             </button>
         </div>
     </header>
 
     <!-- banner is starting here 🎶🎊 -->
-    <div class="banner">
-        <div class="banner-left">
-            <div class="banner-title">
-
-                <span style="display:flex">
-                    <span style="margin-right:10px;">
-                        <span>Eat</span>
-                        <span class="border-b"></span>
+    <div class="banner container" style="margin-top: 210px;">
+        <div class="row">
+            <div class="banner-left col">
+                <div class="banner-title">
+                    <span style="display:flex">
+                        <span style="margin-right:10px;">
+                            <span>Eat</span>
+                            <span class="border-b"></span>
+                        </span>
+                        What You Cook
                     </span>
-                    What You Cook
-                </span>
 
-                <span style="display:flex">
-                    With Us,
-                    <span style="margin-left: 10px;">
-                        <span style="z-index: 9999;">Together!</span>
-                        <span class="border-b"></span></span>
-                </span>
+                    <span style="display:flex">
+                        With Us,
+                        <span style="margin-left: 10px;">
+                            <span style="z-index: 9999;">Together!</span>
+                            <span class="border-b"></span></span>
+                    </span>
+                </div>
+
+                <div class="banner-p">
+                    When you eat something cooked by <br> yourself, the happiness is priceless.
+                </div>
+
+                <button class="btn banner-btn shadow-none">
+                    Decide a Menu
+                </button>
             </div>
 
-            <div class="banner-p">
-                When you eat something cooked by <br> yourself, the happiness is priceless.
-            </div>
-
-            <button class="btn-base banner-btn">
-                Decide a Menu
-            </button>
-        </div>
-
-        <div class="banner-right">
-            <div class="circle">
-                <img src="./assets/Polygon.png">
+            <div class="banner-right col">
+                <img src="./assets/pic-5.png" width="100%">
+                <div class="circle">
+                    <img src="./assets/Polygon.png">
+                </div>
             </div>
         </div>
     </div>
@@ -111,8 +117,8 @@
             </div>
         </div>
 
-        <div class="products">
-            <div class="product">
+        <div class="products row">
+            <div class="product col">
                 <div class="image">
                     <img src="./assets/pic-4.png" width="271px">
                     <div class="dark">
@@ -129,7 +135,7 @@
                 </div>
             </div>
 
-            <div class="product">
+            <div class="product col">
                 <div class="image">
                     <img src="./assets/pic-3.png" width="271px">
                     <div class="dark">
@@ -146,7 +152,7 @@
                 </div>
             </div>
 
-            <div class="product">
+            <div class="product col">
                 <div class="image">
                     <img src="./assets/pic-2.png" width="271px">
                     <div class="dark">
@@ -163,7 +169,7 @@
                 </div>
             </div>
 
-            <div class="product">
+            <div class="product col">
                 <div class="image">
                     <img src="./assets/pic-1.png" width="271px">
                     <div class="dark">

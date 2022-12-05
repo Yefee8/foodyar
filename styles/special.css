@@ -1,7 +1,7 @@
 .special {
     margin-left: 101px;
     margin-right: 101px;
-    margin-top: 110px;
+    margin-top: 128px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,6 @@
 }
 
 .special>.tabs {
-    width: calc(100% - 937px);
     display: flex;
     justify-content: space-between;
     margin-bottom: 59px;
@@ -31,8 +30,8 @@
 .special>.tabs>.tab {
     font-size: 20px;
     line-height: 25px;
+    margin-right: 50px;
     padding: 0px;
-    margin: 0px;
     cursor: pointer;
 }
 
@@ -40,6 +39,10 @@
     color: var(--primary);
     display: flex;
     flex-direction: column;
+}
+
+.special>.tabs>.tab:last-of-type {
+    margin: 0;
 }
 
 .special>.tabs>.tab:first-of-type>.border-b {
@@ -50,18 +53,11 @@
     border-radius: 100px;
 }
 
-.special>.products {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: calc(100%-202px);
-}
 
 .special>.products>.product {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 37px;
 }
 
 .special>.products>.product:last-of-type {
@@ -138,4 +134,10 @@
 
 .special>.products>.product>.stars>img:last-of-type {
     margin-right: 0;
+}
+
+@media screen and (max-width: 1468px) {
+    .product{
+        margin-top: 100px !important;
+    }
 }

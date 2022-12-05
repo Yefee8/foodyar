@@ -1,38 +1,40 @@
 .banner {
-    margin-top: 248px;
-    margin-left: 145px;
-    margin-right: 155px;
-    width: calc(100% - 300px);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 390px;
+    margin-top: 108px;
 }
 
-.banner>.banner-left {
+.banner-left {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
 }
 
-.banner>.banner-left>.banner-title {
+.banner-title {
     font-weight: 700;
     font-size: 46px;
     line-height: 70px;
     margin-bottom: 10px;
 }
 
-.banner>.banner-left>.banner-title>span>span{
+@media screen and (max-width: 991px) {
+    .banner-title{
+        font-size: 30px;
+    }
+    .banner-p{
+        font-size:calc(20px * 30/46);
+    }
+}
+
+.banner-title>span>span {
     display: flex;
     flex-direction: column;
 }
 
-.banner>.banner-left>.banner-title>span>span>span {
+.banner-title>span>span>span {
     z-index: 2;
 }
 
-.banner>.banner-left>.banner-title>span>span>.border-b {
+.banner-title>span>span>.border-b {
     z-index: 1;
     background-color: var(--pink);
     width: 100%;
@@ -42,7 +44,7 @@
     transform: translateY(-20px);
 }
 
-.banner>.banner-left>.banner-p {
+.banner-p {
     margin-bottom: 40px;
     font-weight: 400;
     font-size: 20px;
@@ -50,31 +52,31 @@
     color: var(--secondary);
 }
 
-.banner>.banner-left>.banner-btn {
-    background-color: var(--primary);
-    width: 210px;
-    height: 50px;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+.banner-btn {
+    padding-inline: 24px !important;
+    padding-block: 12px !important;
+    background-color: var(--primary) !important;
+    border-top-left-radius: 60px !important;
+    border-top-right-radius: 60px !important;
+    border-bottom-left-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
 }
 
-.banner>.banner-right {
-    background-image: url(../assets/pic-5.png);
-    width: 619px;
-    height: 413px;
-    background-position: center;
-    background-repeat: no-repeat;
+.banner-right {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.banner>.banner-right>.circle {
+.banner-right>img{
+    z-index: 1;
+    position: absolute;    
+}
+
+.circle {
     background-color: var(--pink);
     width: 70px;
     height: 70px;
@@ -83,4 +85,5 @@
     align-items: center;
     border-radius: 100px;
     cursor: pointer;
+    z-index: 2;
 }
