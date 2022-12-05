@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@400;500;700&display=swap');
+@import url('./navbar.css');
+@import url('./banner.css');
+@import url('./special.css');
+
+:root {
+    --primary: #F7C531;
+    --dark: #272042;
+    --secondary: #8B8BA5;
+    --pink: #FBE0DC;
+}
+
+body {
+    background: #ffffff !important;
+    color: var(--dark) !important;
+    font-family: 'Quicksand' !important;
+    font-weight: 400 !important;
+}
+
+.btn-base {
+    border: 0px;
+}
