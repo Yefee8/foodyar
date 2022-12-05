@@ -67,23 +67,24 @@
     margin-right: 0px;
 }
 
-.special>.products>.product>.img {
+.special>.products>.product>.image {
     width: 271px;
     height: 285px;
     border-radius: 30px;
     margin-bottom: 30px;
+    position: relative;
 }
 
-.special>.products>.product>.img>img {
+.special>.products>.product>.image>img {
     border-radius: 30px;
 }
 
-.special>.products>.product>.img:first-of-type {
-    position: relative;
-    background-image: url(../assets/pic-4.png);
+.special>.products>.product>.image:hover .dark {
+    opacity: 1 !important;
+    transition: 250ms;
 }
 
-.special>.products>.product>.img:first-of-type>.dark {
+.special>.products>.product>.image>.dark {
     position: absolute;
     top: 0;
     left: 0;
@@ -94,9 +95,11 @@
     height: 100%;
     border-radius: 30px;
     background-color: rgba(39, 32, 66, 0.6);
+    opacity: 0;
+    transition: 250ms;
 }
 
-.special>.products>.product>.img:first-of-type>.dark>.circle {
+.special>.products>.product>.image>.dark>.circle {
     background-color: var(--pink);
     width: 70px;
     height: 70px;
@@ -124,13 +127,14 @@
 .special>.products>.product>.stars {
     display: flex;
 }
-.special>.products>.product>.stars>img{
+
+.special>.products>.product>.stars>img {
     width: 22px;
     height: 22px;
     margin-right: 4px;
     border-radius: 1px;
 }
 
-.special>.products>.product>.stars>img:last-of-type{
+.special>.products>.product>.stars>img:last-of-type {
     margin-right: 0;
 }
