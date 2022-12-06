@@ -1,8 +1,4 @@
 .testimonial {
-    margin-left: 302px;
-    margin-right: 303px;
-    /* sadly why it isn't 302.5 */
-    width: calc(100%-505px);
     margin-top: 110px;
 }
 
@@ -11,22 +7,43 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
 .testimonial>.testimonial-items>.desc {
-    width: 736px;
+    max-width: 736px;
     font-size: 36px;
-    line-height: 50px;
     text-align: center;
     z-index: 2;
 }
 
+
 .testimonial>.testimonial-items>img {
     position: absolute;
     top: 0;
-    left: 150px;
-    transform: translateY(-70px);
+    transform: translate3d(calc(50% - 405px), -70px, 0);
+}
+
+@media screen and (max-width:960px) {
+    .testimonial>.testimonial-items>.desc {
+        max-width: 500px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .testimonial>.testimonial-items>img {
+        transform: translate3d(calc(50% - 305px), -70px, 0);
+    }
+
+    .💯 {
+        width: 100% !important;
+    }
+
+    .just-center {
+        display: flex !important;
+        text-align: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
 }
 
 .testimonial>.testimonial-items>.wroteby {

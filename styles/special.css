@@ -29,10 +29,30 @@
 
 .special>.tabs>.tab {
     font-size: 20px;
-    line-height: 25px;
     margin-right: 50px;
     padding: 0px;
     cursor: pointer;
+}
+
+@media screen and (max-width:392px){
+    .tab {
+        font-size: 5px !important;
+        margin-right: 5px !important;
+    }
+}
+
+@media screen and (min-width:392px) and (max-width: 576px) {
+    .tab {
+        font-size: 10px !important;
+        margin-right: 5px !important;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width: 768px) {
+    .tab {
+        font-size: 15px !important;
+        margin-right: 25px !important;
+    }
 }
 
 .special>.tabs>.tab:first-of-type {
@@ -137,7 +157,7 @@
 }
 
 @media screen and (max-width: 1468px) {
-    .product{
+    .product {
         margin-top: 100px !important;
     }
 }

@@ -1,22 +1,17 @@
 .stats {
-    margin-left: 291px;
-    margin-right: 292px;
-    width: calc(100% - 583px);
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
+    justify-content: center;
 }
 
 .stats>.stat {
-    margin-right: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     height: 73px;
 }
 
-.stats>.stat:last-of-type{
+.stats>.stat:last-of-type {
     margin-right: 0;
 }
 

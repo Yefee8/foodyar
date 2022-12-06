@@ -1,11 +1,8 @@
 .app {
-    margin-top: 108px;
+    margin: 0px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-left: 218px;
-    margin-right: 209px;
-    width: calc(100%-427px);
+    justify-content: center;
 }
 
 .app>.p {
@@ -16,13 +13,27 @@
 }
 
 .app>.p>.title {
-    width: 441px;
     font-weight: 700;
     font-size: 46px;
-    line-height: 70px;
     margin-bottom: 10px;
 }
-.app>.p>.title>div>span{
+
+@media screen and (max-width:600px) {
+    .app>.p>.title {
+        font-size: 23px !important;
+    }
+
+    .app>.p>.title>div>span>.border-b {
+        height: 4px !important;
+        transform: translateY(-7px) !important;
+    }
+
+    .app>.p>.desc {
+        font-size: 10px !important;
+    }
+}
+
+.app>.p>.title>div>span {
     display: flex;
     flex-direction: column;
 }
