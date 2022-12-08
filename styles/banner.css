@@ -34,6 +34,12 @@
     font-size: 20px;
 }
 
+.responsive-banner-part:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 1400px) {
     .responsive-banner-part {
         display: flex;

@@ -38,8 +38,20 @@ span.border-b {
     transform: translateY(8px);
 }
 
-.w-full{
+.w-full {
     width: 100%;
+}
+
+.play-btn {
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: var(--pink);
+    border-radius: 100px;
 }
 
 @media screen and (max-width: 750px) {

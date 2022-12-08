@@ -1,0 +1,149 @@
+.special {
+    margin-top: 100px;
+}
+
+.special>.row {
+    display: flex;
+    justify-content: center;
+}
+
+.watch-now {
+    font-size: 20px;
+    color: var(--secondary);
+}
+
+.special-title {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.tabs {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.tab {
+    cursor: pointer;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.tab>.border-b {
+    margin-top: 10px;
+    width: 50%;
+    height: 4px;
+    background-color: var(--primary);
+    border-radius: 100px;
+}
+
+.tab:first-of-type {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: var(--primary);
+}
+
+@media screen and (max-width: 960px) {
+    .special-title {
+        font-size: 30px;
+    }
+
+    .watch-now {
+        font-size: 17px;
+    }
+
+    .tab {
+        font-size: 15px;
+        margin-right: 25px;
+    }
+
+    .tab>.border-b {
+        height: 3px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .tab {
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .tab>.border-b {
+        height: 2px;
+    }
+}
+
+.tab:last-of-type {
+    margin: 0px;
+}
+
+.wrapped {
+    width: calc(100% - 202px);
+    margin-left: 101px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.spec {
+    margin-top:60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    position: relative;
+}
+
+.image>.dark {
+    border-radius: 40px;
+    transition: 250ms;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(39, 32, 66, 0.6);
+}
+
+.image:hover .dark {
+    opacity: 1;
+}
+
+.spec>.image>img {
+    border-radius: 40px;
+}
+
+.spec-title {
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.made-by {
+    color: var(--secondary);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.stars {
+    margin-top: 12px;
+}
+
+.stars > img{
+    margin-right: 4px;
+}
+
+.stars > img:last-of-type{
+    margin: 0px;
+}
