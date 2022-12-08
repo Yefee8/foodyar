@@ -1,0 +1,96 @@
+.testmonial {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.camella-desc {
+    display: flex;
+    justify-content: center;
+}
+
+.camella-desc>img {
+    transform: translate3d(60px, -60px, 0);
+}
+
+.parag {
+    z-index: 2;
+    font-size: 36px;
+    max-width: 736px;
+}
+
+.by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.by>.img {
+    margin-right: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.circle {
+    position: absolute;
+    background-color: #FDFAE5;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    transform: translate3d(-5px, -5px, 0);
+}
+
+.circle:last-of-type {
+    background-color: #D8CBF6;
+    transform: translate3d(5px, 5px, 0);
+}
+
+.by>.img>img {
+    z-index: 2;
+    border-radius: 100px;
+}
+
+.by-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.camellas-title {
+    font-size: 16px;
+    color: var(--secondary);
+}
+
+@media screen and (max-width: 992px) {
+    .parag {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .camella-desc>img {
+        height: 90px;
+        transform: translate3d(45px, -50px, 0);
+    }
+
+    .parag {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .camella-desc>img {
+        height: 60px;
+        transform: translate3d(40px, -30px, 0);
+    }
+
+    .parag {
+        font-size: 20px;
+    }
+}
