@@ -46,10 +46,10 @@
     margin-right: 20px;
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 889px) {
     .app-texts {
         align-items: center;
-        margin-top: 50px;
+        margin-top: 50px !important;
     }
 }
 
