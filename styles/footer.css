@@ -10,16 +10,23 @@
 }
 
 @media screen and (max-width:889px) {
-    .footer{
+    .footer {
         flex-direction: column;
     }
-    .footer > div{
+
+    .footer>div {
         margin-top: 50px;
     }
-    .footer > div:first-of-type{
+
+    .footer>div:first-of-type {
         margin-top: 0px;
     }
-    .list-item{
+
+    .list-item {
+        text-align: center;
+    }
+
+    .list-title {
         text-align: center;
     }
 }
